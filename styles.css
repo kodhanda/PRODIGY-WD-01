@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  background-color: #555;
+  color: #ffa500; /* Light orange text color on hover */
+}
+
+.nav-scrolled {
+  background-color: #222 !important;
+}
+
+.nav-scrolled #navbar ul li a {
+  color: #ccc !important;
+}
+
+.nav-scrolled #navbar ul li a:hover {
+  background-color: #444;
+  color: #ffa500; /* Light orange text color on hover */
+}
+
+main > section {
+  display: none;
+  padding: 30px 20px; /* Adjusted padding to pull text down by 10px */
+  margin-top: 10px; /* Added margin to create space between sections */
+}
+
+main > section.active {
+  display: block;
+}
+
+main > section:hover {
+  background-color: #f0f0f0;
+}
